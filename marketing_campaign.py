@@ -40,7 +40,7 @@ if location != "전체":
     filtered = filtered[filtered['Location'] == location]
 
 # 탭 구성
-tab1, tab2, tab3 = st.tabs(["📊 캠페인 성과", "💰 비용 분석", "📍 지역 성과"])
+tab1, tab2, tab3 = st.tabs(["📊 캠페인 성과", "💰 채널별 분석", "📍 지역 성과"])
 font_config = dict(family="Malgun Gothic, AppleGothic, NanumGothic")
 
 # 공통 범위 계산 함수 -> 수치들의 차이가 미비해서 시각적으로 차이를 보기위해 사용
