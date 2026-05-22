@@ -56,7 +56,7 @@ with tab1:
     fig1 = px.bar(group_data, x='Campaign_Type', y='ROI', text='ROI') # ROI를 막대 그래프로 생성, 막대 위에 수치 표시
     fig1.update_yaxes(range=get_range(group_data, 'ROI')) # Y축 범위를 위에서 정의한 함수(get_range)로 좁혀 차이를 확대
     fig1.update_traces(texttemplate='%{text:.4f}', textposition='outside') # 막대 위 텍스트를 소수점 4자리로 고정하고 밖에 배치
-    fig1.update_layout(font=font_config) 
+    fig1.update_layout(xaxis_title="카테고리 유형", yaxis_title="ROI(투자 수익률)", font=font_config)
     st.plotly_chart(fig1, use_container_width=True) 
 
 with tab2:
